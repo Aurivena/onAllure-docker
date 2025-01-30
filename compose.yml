@@ -1,0 +1,20 @@
+services:
+  allure:
+    container_name: allure-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+
+      - # путь до репозитория:/app/repo:/app/repo
+      - allure-report:/app/reports
+      - test-report:/app/reports/allure-test
+    ports:
+      - "9090:9090"
+    tty: true
+    user: root
+
+
+volumes:
+  allure-report:
+  test-report:

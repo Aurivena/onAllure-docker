@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
     volumes:
 
-      - # путь до репозитория:/app/repo:/app/repo
+      - # путь до репозитория:/app/repo
       - allure-report:/app/reports
       - test-report:/app/reports/allure-test
     ports:

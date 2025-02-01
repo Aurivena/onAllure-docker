@@ -12,7 +12,6 @@ services:
     ports:
       - "9090:9090"
     tty: true
-    user: root
 
 
 volumes:

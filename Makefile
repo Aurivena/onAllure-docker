@@ -1,3 +1,3 @@
 restart:
-	docker compose down
+	docker compose down --volumes
 	docker compose up

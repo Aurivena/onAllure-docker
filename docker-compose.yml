@@ -5,15 +5,13 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-
       - # путь до репозитория:/app/repo
-      - allure-report:/app/reports
-      - test-report:/app/reports/allure-test
+      - allure-test:/app/reports/allure-test
+      - allure-report:/app/reports/allure-report
     ports:
       - "9090:9090"
     tty: true
 
-
 volumes:
+  allure-test:
   allure-report:
-  test-report:

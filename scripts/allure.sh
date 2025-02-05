@@ -17,7 +17,5 @@ for dir in $allure_dirs; do
   fi
 done
 
-# Генерация отчета с очисткой целевой директории
 allure generate "$TEST_DIR" -o "$REPORT_DIR" --clean
-# Открытие отчета
 allure open "$REPORT_DIR" -h "$HOST_IP" -p "$HOST_PORT"
